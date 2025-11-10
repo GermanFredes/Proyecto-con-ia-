@@ -78,6 +78,26 @@ uvicorn main:app --reload
 
 El servidor estará disponible en: http://127.0.0.1:8000
 
+🚀 Despliegue en Vercel
+
+Este proyecto está configurado para ser desplegado como una función Serverless en Vercel, gracias a los archivos requirements.txt y vercel.json.
+
+Paso Crítico: Variables de Entorno en Vercel
+
+ADVERTENCIA: Vercel no lee el archivo bd.env. Debes configurar la variable PASSWORD directamente en la interfaz de Vercel.
+
+Conexión a GitHub: En Vercel, conecta tu repositorio de GitHub.
+
+Configuración de Variables: Antes de desplegar, ve a Settings -> Environment Variables en tu proyecto de Vercel.
+
+Añadir Variable:
+
+Nombre (Name): PASSWORD
+
+Valor (Value): TU_CONTRASEÑA_SECRETA_DE_SUPABASE
+
+Desplegar: Una vez configurada la variable, inicia el despliegue.
+
 🧪 Uso y Endpoints Clave
 
 Una vez que el servidor esté activo, puedes interactuar con la API a través de la documentación interactiva: http://127.0.0.1:8000/docs
